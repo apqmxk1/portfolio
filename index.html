@@ -8,61 +8,94 @@
 </head>
 <body>
   <header class="app-bar">
-    <div class="logo">My Portfolio</div>
+    <a class="logo" href="index.html" aria-label="Go to home">My Portfolio</a>
     <nav aria-label="Main navigation">
       <a href="index.html" class="active">About</a>
       <a href="activities.html">Activities</a>
     </nav>
   </header>
 
-  <main class="container">
-    <section class="hero card">
-      <div class="profile-circle" aria-label="Profile image placeholder">ME</div>
-
-      <div class="hero-content">
+  <main>
+    <section class="hero-section">
+      <div class="hero-copy">
         <p class="eyebrow">Portfolio Website</p>
-        <h1>I'm Jung Junho</h1>
+        <h1>Hello, I'm Your Name</h1>
         <p class="subtitle">Student | Developer | Creative Thinker</p>
-        <p>
-          I am interested in web development, design, and creating useful digital
-          experiences. This portfolio introduces who I am and what I have done.
-          And I'm belonging to Computer Science and Artificial Intelligent of CNU.
+        <p class="lead">
+          I design and build clean web experiences with thoughtful structure,
+          responsive layouts, and simple interactions that make information easy
+          to explore.
         </p>
+        <div class="hero-actions">
+          <button id="contactBtn" class="material-btn" type="button">Contact Me</button>
+          <a class="ghost-btn" href="activities.html">View Activities</a>
+        </div>
+      </div>
 
-        <button id="contactBtn" class="material-btn" type="button">Contact Me</button>
+      <aside class="profile-panel" aria-label="Profile summary">
+        <img class="profile-photo" src="https://github.com/apqmxk1.png" alt="Profile avatar" />
+        <div>
+          <h2>Your Name</h2>
+          <p>Web development learner focused on useful, modern digital projects.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="stats-band" aria-label="Portfolio highlights">
+      <div>
+        <strong>03</strong>
+        <span>Core Skills</span>
+      </div>
+      <div>
+        <strong>02</strong>
+        <span>Portfolio Pages</span>
+      </div>
+      <div>
+        <strong>100%</strong>
+        <span>Responsive Layout</span>
       </div>
     </section>
 
-    <section class="grid" aria-label="Introduction cards">
-      <article class="card">
-        <h2>About Me</h2>
-        <p>
-          I enjoy learning new technologies and solving problems through simple,
-          clean, and user-friendly design.
-        </p>
-      </article>
+    <section class="container section-space">
+      <div class="section-heading">
+        <p class="eyebrow">Introduction</p>
+        <h2>What I Care About</h2>
+      </div>
 
-      <article class="card">
-        <h2>Skills</h2>
-        <ul>
-          <li>HTML / CSS / JavaScript / Flutter</li>
-          <li>Responsive Web Hacking</li>
-          <li>Basic UI/UX Design</li>
-        </ul>
-      </article>
+      <div class="grid">
+        <article class="card feature-card">
+          <div class="icon-badge">01</div>
+          <h3>About Me</h3>
+          <p>
+            I enjoy learning new technologies and solving problems through simple,
+            clean, and user-friendly design.
+          </p>
+        </article>
 
-      <article class="card">
-        <h2>Goals</h2>
-        <p>
-          My goal is to keep improving my programming skills and build projects
-          that are helpful, clear, and enjoyable to use.
-        </p>
-      </article>
+        <article class="card feature-card">
+          <div class="icon-badge">02</div>
+          <h3>Skills</h3>
+          <ul>
+            <li>HTML / CSS / JavaScript</li>
+            <li>Responsive Web Design</li>
+            <li>Basic UI/UX Design</li>
+          </ul>
+        </article>
+
+        <article class="card feature-card">
+          <div class="icon-badge">03</div>
+          <h3>Goals</h3>
+          <p>
+            My goal is to keep improving my programming skills and build projects
+            that are helpful, clear, and enjoyable to use.
+          </p>
+        </article>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Jung Junho. All rights reserved.</p>
+    <p>&copy; 2026 Your Name. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
