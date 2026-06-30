@@ -8,45 +8,57 @@
 </head>
 <body>
   <header class="app-bar">
-    <div class="logo">My Portfolio</div>
+    <a class="logo" href="index.html" aria-label="Go to home">My Portfolio</a>
     <nav aria-label="Main navigation">
       <a href="index.html">About</a>
       <a href="activities.html" class="active">Activities</a>
     </nav>
   </header>
 
-  <main class="container">
+  <main class="container section-space">
     <section class="page-title">
-      <p class="eyebrow">Portfolio Website</p>
+      <p class="eyebrow">Activities</p>
       <h1>Activity List</h1>
-      <p>Here are some projects, experiences, and activities I have worked on.</p>
+      <p>
+        A quick overview of projects, learning experiences, and design practice
+        that shaped my portfolio.
+      </p>
     </section>
 
     <section class="activity-list" aria-label="Activities">
-      <article class="card activity-card">
-        <h2>Personal Website Project</h2>
-        <p class="date">2026</p>
-        <p>
-          Built a responsive portfolio website using HTML, CSS, and JavaScript.
-        </p>
+      <article class="activity-card">
+        <div class="activity-year">2026</div>
+        <div class="activity-content">
+          <h2>Personal Website Project</h2>
+          <p>
+            Built a responsive portfolio website using HTML, CSS, and JavaScript.
+          </p>
+          <span class="tag">Web Project</span>
+        </div>
       </article>
 
-      <article class="card activity-card">
-        <h2>School Programming Club</h2>
-        <p class="date">2025 - 2026</p>
-        <p>
-          Participated in coding activities, team projects, and problem-solving
-          practice.
-        </p>
+      <article class="activity-card">
+        <div class="activity-year">2025 - 2026</div>
+        <div class="activity-content">
+          <h2>School Programming Club</h2>
+          <p>
+            Participated in coding activities, team projects, and problem-solving
+            practice.
+          </p>
+          <span class="tag">Team Learning</span>
+        </div>
       </article>
 
-      <article class="card activity-card">
-        <h2>UI Design Practice</h2>
-        <p class="date">2025</p>
-        <p>
-          Practiced creating clean layouts, color systems, and responsive web
-          components.
-        </p>
+      <article class="activity-card">
+        <div class="activity-year">2025</div>
+        <div class="activity-content">
+          <h2>UI Design Practice</h2>
+          <p>
+            Practiced creating clean layouts, color systems, and responsive web
+            components.
+          </p>
+          <span class="tag">Design</span>
+        </div>
       </article>
     </section>
   </main>
