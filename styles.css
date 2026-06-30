@@ -328,6 +328,124 @@ footer {
   color: var(--muted);
 }
 
+.ai-service {
+  padding-top: 34px;
+}
+
+.ai-service .section-heading p:not(.eyebrow) {
+  max-width: 720px;
+  color: var(--muted);
+}
+
+.ai-service-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1.1fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+.ai-service-copy,
+.ai-form {
+  background: var(--surface);
+  border: 1px solid rgba(223, 230, 242, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 12px 30px rgba(32, 48, 80, 0.08);
+}
+
+.ai-service-copy {
+  padding: 28px;
+}
+
+.ai-service-copy h3 {
+  margin-bottom: 12px;
+}
+
+.ai-service-copy p,
+.service-points li {
+  color: var(--muted);
+}
+
+.service-points {
+  display: grid;
+  gap: 10px;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.ai-form {
+  padding: 28px;
+  display: grid;
+  gap: 12px;
+}
+
+.ai-form label {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.ai-form input,
+.ai-form textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfdff;
+  color: var(--ink);
+  font: inherit;
+  padding: 13px 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.ai-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.ai-form input:focus,
+.ai-form textarea:focus {
+  border-color: var(--blue);
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+.ai-form .material-btn {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.response-message {
+  display: none;
+  margin-top: 4px;
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-weight: 800;
+}
+
+.response-message.is-loading {
+  display: block;
+  background: rgba(37, 99, 235, 0.1);
+  color: var(--blue);
+}
+
+.response-message.is-success {
+  display: block;
+  background: rgba(16, 185, 129, 0.12);
+  color: #047857;
+}
+
+.response-message.is-error {
+  display: block;
+  background: rgba(220, 38, 38, 0.1);
+  color: #b91c1c;
+}
+
+@media (max-width: 860px) {
+  .ai-service-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 860px) {
   .hero-section {
     min-height: auto;
